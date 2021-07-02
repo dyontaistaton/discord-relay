@@ -1,0 +1,16 @@
+{
+    "success": {
+        "author": {
+            "name": "Relaying Successful Log . . .",
+            "icon_url": "https://media.discordapp.net/attachments/600897070555070494/626193622861086720/checkmark.png"
+        },
+        "color": 62844
+    },
+    "error": {
+        "author": {
+            "name": "Relaying Error Log . . .",
+            "icon_url": "https://media.discordapp.net/attachments/600897070555070494/626193494997860354/X_mark.png"
+        },
+        "color": 16713736
+    }
+}
