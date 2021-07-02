@@ -23,5 +23,6 @@
   "homepage": "https://github.com/dyontaistaton/discord-relay#readme",
   "dependencies": {
     "simple-discord-webhooks": "^1.0.1"
-  }
+  },
+  "devDependencies": {}
 }
