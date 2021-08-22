@@ -1,4 +1,5 @@
 {
+    "base": {},
     "success": {
         "author": {
             "name": "Relaying Successful Log . . .",
@@ -12,5 +13,11 @@
             "icon_url": "https://media.discordapp.net/attachments/600897070555070494/626193494997860354/X_mark.png"
         },
         "color": 16713736
+    },
+    "log": {
+        "author": {
+            "name":"Relaying Log . . ."
+        },
+        "color": 45804
     }
 }
