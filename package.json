@@ -1,6 +1,6 @@
 {
   "name": "discord-relay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Discord Webhook Log Relay",
   "main": "index.js",
   "scripts": {
