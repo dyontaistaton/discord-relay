@@ -70,7 +70,7 @@ const DiscordRelay = function (url) {
 					fields.map((field) => ({
 						name: field.title,
 						value: field.message,
-						inline,
+						inline: field.inline,
 					})),
 				],
 			],
