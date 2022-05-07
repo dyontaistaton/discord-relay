@@ -62,37 +62,39 @@ const DiscordRelay = function (url) {
 		url,
 		thumbnail,
 	}) => {
-		return await sendMessage('', {
-			title,
-			description: message,
-			fields: [
-				...[
-					fields.map((field) => ({
-						name: field.title,
-						value: field.message,
-						inline: field.inline,
-					})),
+		return await sendMessage('', [
+			{
+				title,
+				description: message,
+				fields: [
+					...[
+						fields.map((field) => ({
+							name: field.title,
+							value: field.message,
+							inline: field.inline,
+						})),
+					],
 				],
-			],
-			timestamp,
-			author: {
-				name: author.title,
-				icon_url: author.image,
-				url: author.url,
+				timestamp,
+				author: {
+					name: author.title,
+					icon_url: author.image,
+					url: author.url,
+				},
+				footer: {
+					text: footer.title,
+					icon_url: footer.image,
+				},
+				image: {
+					url: image,
+				},
+				color,
+				url,
+				thumbnail: {
+					url: thumbnail,
+				},
 			},
-			footer: {
-				text: footer.title,
-				icon_url: footer.image,
-			},
-			image: {
-				url: image,
-			},
-			color,
-			url,
-			thumbnail: {
-				url: thumbnail,
-			},
-		});
+		]);
 	};
 
 	return Object.freeze({
