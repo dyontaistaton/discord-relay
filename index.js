@@ -62,7 +62,7 @@ const DiscordRelay = function (url) {
 		url,
 		thumbnail,
 	}) => {
-		return await sendMessage({
+		return await sendMessage('', {
 			title,
 			description: message,
 			fields: [
