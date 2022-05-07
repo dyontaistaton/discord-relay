@@ -67,13 +67,11 @@ const DiscordRelay = function (url) {
 				title,
 				description: message,
 				fields: [
-					...[
-						fields.map((field) => ({
-							name: field.title,
-							value: field.message,
-							inline: field.inline,
-						})),
-					],
+					...fields.map((field) => ({
+						name: field.title,
+						value: field.message,
+						inline: field.inline || false,
+					})),
 				],
 				timestamp,
 				author: {
