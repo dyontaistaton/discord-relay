@@ -60,6 +60,7 @@ const DiscordRelay = function (url) {
 		footer,
 		color,
 		url,
+		thumbnail,
 	}) => {
 		return await sendMessage({
 			title,
@@ -88,6 +89,9 @@ const DiscordRelay = function (url) {
 			},
 			color,
 			url,
+			thumbnail: {
+				url: thumbnail,
+			},
 		});
 	};
 
